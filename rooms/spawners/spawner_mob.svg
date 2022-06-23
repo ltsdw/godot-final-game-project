@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866667 33.866668"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="tileset_hints.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="793.70081px"
+     inkscape:snap-global="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:zoom="1.5518659"
+     inkscape:cx="79.259426"
+     inkscape:cy="60.572244"
+     inkscape:window-width="1894"
+     inkscape:window-height="1027"
+     inkscape:window-x="12"
+     inkscape:window-y="39"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:lockguides="true" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.933334,-0.02997148)">
+    <rect
+       style="fill:#800000;stroke:none;stroke-width:5.90286;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers;stop-color:#000000"
+       id="rect1300"
+       width="33.866669"
+       height="33.866669"
+       x="33.933334"
+       y="0.02997148" />
+    <g
+       id="g7206"
+       transform="translate(4.7011719e-6,0.14417658)">
+      <path
+         id="rect2518"
+         style="fill:#ff2a2a;stroke-width:3.96875;paint-order:stroke fill markers;stop-color:#000000"
+         d="m 63.628159,4.2633055 -4.707205,4.2333334 h -8.05429 V 29.374953 l 10.933184,-6.726206 z m -3.162597,9.2247605 -2.190565,4.533573 -5.08341,-1.425752 z" />
+      <path
+         id="path2891"
+         style="fill:#ff2a2a;stroke-width:3.96875;paint-order:stroke fill markers;stop-color:#000000"
+         d="m 38.105169,4.2633055 4.707205,4.2333334 h 8.05429 V 29.374953 L 39.933479,22.648748 Z m 3.162596,9.2247605 2.190565,4.533574 5.083411,-1.425753 z" />
+    </g>
+  </g>
+</svg>

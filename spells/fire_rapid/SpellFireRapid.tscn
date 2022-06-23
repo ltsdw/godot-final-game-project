@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://spells/fire_rapid/SpellFireRapid.gd" type="Script" id=1]
+[ext_resource path="res://spells/fire_basic/SpellBasicFire.tscn" type="PackedScene" id=2]
+
+[node name="SpellFireRapid" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+max_range = 2000.0
+max_bullet_speed = 1500.0
+fire_rate = 10.0

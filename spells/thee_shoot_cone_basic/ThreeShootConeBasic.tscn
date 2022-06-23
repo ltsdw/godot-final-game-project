@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://spells/Spell.tscn" type="PackedScene" id=1]
+[ext_resource path="res://spells/thee_shoot_cone_basic/ThreeShootConeBasic.gd" type="Script" id=2]
+
+[node name="ThreeShootConeBasic" instance=ExtResource( 1 )]
+script = ExtResource( 2 )

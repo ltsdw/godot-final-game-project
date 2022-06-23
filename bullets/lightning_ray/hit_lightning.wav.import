@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hit_lightning.wav-0947a6c4907827ba8b7653dcd609f098.sample"
+
+[deps]
+
+source_file="res://bullets/lightning_ray/hit_lightning.wav"
+dest_files=[ "res://.import/hit_lightning.wav-0947a6c4907827ba8b7653dcd609f098.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

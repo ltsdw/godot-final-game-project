@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Thaehan - Power Up - Rise Up.ogg-be425c49bd9af9d6cef068d4a261e032.oggstr"
+
+[deps]
+
+source_file="res://music/Thaehan - Power Up - Rise Up.ogg"
+dest_files=[ "res://.import/Thaehan - Power Up - Rise Up.ogg-be425c49bd9af9d6cef068d4a261e032.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

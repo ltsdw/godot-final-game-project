@@ -1,0 +1,59 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://rooms/teleporter/teleport_fx/01.png" type="Texture" id=1]
+[ext_resource path="res://rooms/teleporter/teleport_fx/03.png" type="Texture" id=2]
+[ext_resource path="res://rooms/teleporter/teleport_fx/05.png" type="Texture" id=3]
+[ext_resource path="res://rooms/teleporter/teleporter_particle_green.png" type="Texture" id=4]
+[ext_resource path="res://rooms/teleporter/teleport_fx/06.png" type="Texture" id=5]
+[ext_resource path="res://rooms/teleporter/teleport_fx/02.png" type="Texture" id=6]
+[ext_resource path="res://rooms/teleporter/teleport_fx/04.png" type="Texture" id=7]
+[ext_resource path="res://rooms/teleporter/teleport_fx/TeleportFx.gd" type="Script" id=8]
+
+[sub_resource type="SpriteFrames" id=23]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 3 ), null, null, ExtResource( 5 ) ],
+"loop": false,
+"name": "default",
+"speed": 13.0
+} ]
+
+[sub_resource type="Gradient" id=20]
+offsets = PoolRealArray( 0, 0.795252, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 20 )
+
+[sub_resource type="Curve" id=21]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.391667, 1 ), 0.134496, 0.134496, 0, 0, Vector2( 1, 0 ), -4.44156, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=7]
+curve = SubResource( 21 )
+
+[sub_resource type="ParticlesMaterial" id=22]
+emission_shape = 1
+emission_sphere_radius = 36.0
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 0.0
+gravity = Vector3( 0, -49, 0 )
+initial_velocity = 100.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_curve = SubResource( 7 )
+color_ramp = SubResource( 5 )
+
+[node name="TeleportFx" type="AnimatedSprite"]
+position = Vector2( 0, -57 )
+frames = SubResource( 23 )
+script = ExtResource( 8 )
+
+[node name="Particle" type="Particles2D" parent="."]
+position = Vector2( 0, 57 )
+amount = 5
+randomness = 0.5
+process_material = SubResource( 22 )
+texture = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pain_02.wav-61053c92bf0f5a2e212a817ac3f455d0.sample"
+
+[deps]
+
+source_file="res://robot/pain_02.wav"
+dest_files=[ "res://.import/pain_02.wav-61053c92bf0f5a2e212a817ac3f455d0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://interface/theme/Interface.theme" type="Theme" id=1]
+[ext_resource path="res://interface/WinGame.gd" type="Script" id=2]
+[ext_resource path="res://interface/MenuBackground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/theme/title_font_large.tres" type="DynamicFont" id=4]
+
+[node name="WinGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="MenuBackground" parent="." instance=ExtResource( 3 )]
+margin_right = 3.0
+margin_bottom = 1.0
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 771.0
+margin_top = 409.0
+margin_right = 1149.0
+margin_bottom = 670.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 378.0
+margin_bottom = 89.0
+custom_fonts/font = ExtResource( 4 )
+text = "You Win!"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 93.0
+margin_right = 378.0
+margin_bottom = 133.0
+custom_constants/separation = 40
+
+[node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 137.0
+margin_right = 378.0
+margin_bottom = 197.0
+focus_next = NodePath("../QuitButton")
+focus_previous = NodePath("../QuitButton")
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 201.0
+margin_right = 378.0
+margin_bottom = 261.0
+focus_next = NodePath("../RestartButton")
+focus_previous = NodePath("../RestartButton")
+text = "Quit"

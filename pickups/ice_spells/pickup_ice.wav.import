@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pickup_ice.wav-2baa09b3c063cb87d950b525dcee8ede.sample"
+
+[deps]
+
+source_file="res://pickups/ice_spells/pickup_ice.wav"
+dest_files=[ "res://.import/pickup_ice.wav-2baa09b3c063cb87d950b525dcee8ede.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Thaehan - Mekatsune - Fox Attacks.ogg-46383c68e0e060f93bdf56c413e2f7f4.oggstr"
+
+[deps]
+
+source_file="res://music/Thaehan - Mekatsune - Fox Attacks.ogg"
+dest_files=[ "res://.import/Thaehan - Mekatsune - Fox Attacks.ogg-46383c68e0e060f93bdf56c413e2f7f4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pickup_lightning_shot.wav-4159f685efa5d9f9f9999abbf7553d7b.sample"
+
+[deps]
+
+source_file="res://pickups/lightnings_spells/pickup_lightning_shot.wav"
+dest_files=[ "res://.import/pickup_lightning_shot.wav-4159f685efa5d9f9f9999abbf7553d7b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

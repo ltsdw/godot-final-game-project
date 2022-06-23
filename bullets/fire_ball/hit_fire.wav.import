@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hit_fire.wav-19cb0814355325280ef4cbe68465fcf3.sample"
+
+[deps]
+
+source_file="res://bullets/fire_ball/hit_fire.wav"
+dest_files=[ "res://.import/hit_fire.wav-19cb0814355325280ef4cbe68465fcf3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

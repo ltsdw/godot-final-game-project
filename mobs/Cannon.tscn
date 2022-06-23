@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://mobs/Cannon.gd" type="Script" id=1]
+[ext_resource path="res://bullets/fire_ball/Fireball.tscn" type="PackedScene" id=2]
+
+[node name="Cannon" type="Sprite"]
+script = ExtResource( 1 )
+BulletScene = ExtResource( 2 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 37, 0 )

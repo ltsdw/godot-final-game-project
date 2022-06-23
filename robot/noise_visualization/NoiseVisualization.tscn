@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://robot/noise_visualization/camera_noise_texture_visualization.tres" type="Texture" id=1]
+[ext_resource path="res://robot/noise_visualization/NoiseVisualization.gd" type="Script" id=2]
+[ext_resource path="res://bullets/particle_bullet.png" type="Texture" id=3]
+
+[node name="NoiseVisualization" type="Sprite"]
+position = Vector2( 579, 156 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( 256, 256 )
+script = ExtResource( 2 )
+
+[node name="Point1" type="Sprite" parent="."]
+modulate = Color( 1, 0.785156, 0, 1 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 3 )
+
+[node name="Point2" type="Sprite" parent="."]
+modulate = Color( 0.980392, 0, 1, 1 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 3 )

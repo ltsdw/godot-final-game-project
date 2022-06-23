@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Thaehan - Beatem Up - Unstoppable.ogg-c432aec5953777aad0c56fb0e42bfc75.oggstr"
+
+[deps]
+
+source_file="res://music/Thaehan - Beatem Up - Unstoppable.ogg"
+dest_files=[ "res://.import/Thaehan - Beatem Up - Unstoppable.ogg-c432aec5953777aad0c56fb0e42bfc75.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

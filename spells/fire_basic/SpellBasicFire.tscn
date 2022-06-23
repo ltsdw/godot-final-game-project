@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://spells/fire_basic/SpellBasicFire.gd" type="Script" id=1]
+[ext_resource path="res://spells/Spell.tscn" type="PackedScene" id=2]
+[ext_resource path="res://spells/fire_spray/shoot_fire.wav" type="AudioStream" id=3]
+[ext_resource path="res://bullets/fire_ball/Fireball.tscn" type="PackedScene" id=4]
+
+[node name="SpellBasicFire" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+bullet_scene = ExtResource( 4 )
+max_range = 1200.0
+max_bullet_speed = 1000.0
+fire_rate = 4.0
+
+[node name="AudioStreamPlayer2D" parent="." index="0"]
+stream = ExtResource( 3 )
+
+[node name="HandLeft" parent="." index="1"]
+position = Vector2( 15.8633, -27 )
+
+[node name="HandRight" parent="." index="2"]
+position = Vector2( 11.8633, 30 )

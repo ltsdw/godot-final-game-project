@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pickup_health.wav-cc89e32efc89f7cceda40df3ddc55a74.sample"
+
+[deps]
+
+source_file="res://pickups/health/pickup_health.wav"
+dest_files=[ "res://.import/pickup_health.wav-cc89e32efc89f7cceda40df3ddc55a74.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

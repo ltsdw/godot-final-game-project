@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/death_03.wav-044b649b32ed80aa59f02610302b4177.sample"
+
+[deps]
+
+source_file="res://robot/death_03.wav"
+dest_files=[ "res://.import/death_03.wav-044b649b32ed80aa59f02610302b4177.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

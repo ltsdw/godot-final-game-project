@@ -1,0 +1,21 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://pickups/Pickup.tscn" type="PackedScene" id=1]
+[ext_resource path="res://pickups/ice_spells/pickup_ice.png" type="Texture" id=2]
+[ext_resource path="res://pickups/PickupSpell.gd" type="Script" id=3]
+[ext_resource path="res://spells/ice_punch/SpellIcePunch.tscn" type="PackedScene" id=4]
+[ext_resource path="res://pickups/ice_spells/particle_ice.png" type="Texture" id=5]
+[ext_resource path="res://pickups/ice_spells/pickup_ice.wav" type="AudioStream" id=6]
+
+[node name="PickupIce" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+spell_scene = ExtResource( 4 )
+
+[node name="Sprite" parent="." index="2"]
+texture = ExtResource( 2 )
+
+[node name="PariclesSparkle" parent="Sprite" index="0"]
+texture = ExtResource( 5 )
+
+[node name="AudioStreamPlayer2D" parent="." index="3"]
+stream = ExtResource( 6 )

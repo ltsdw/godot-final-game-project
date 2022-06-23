@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://mobs/Mob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mobs/dummy/dummy.png" type="Texture" id=2]
+[ext_resource path="res://mobs/dummy/exclamation-mark.svg" type="Texture" id=3]
+[ext_resource path="res://mobs/dummy/Dummy.gd" type="Script" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+resource_local_to_scene = true
+radius = 251.674
+
+[sub_resource type="CircleShape2D" id=2]
+resource_local_to_scene = true
+radius = 62.3574
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 378.298
+
+[node name="Dummy" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" parent="DetectionArea" index="0"]
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" parent="AttackArea" index="0"]
+shape = SubResource( 2 )
+
+[node name="Sprite" parent="." index="3"]
+texture = ExtResource( 2 )
+
+[node name="Alert" parent="Sprite" index="0"]
+texture = ExtResource( 3 )
+offset = Vector2( 64, -64 )
+
+[node name="DummyArea" type="Area2D" parent="." index="10"]
+collision_layer = 0
+collision_mask = 49
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DummyArea" index="0"]
+shape = SubResource( 3 )

@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/theme/Interface.theme" type="Theme" id=1]
+[ext_resource path="res://interface/Pause.gd" type="Script" id=2]
+[ext_resource path="res://interface/theme/title_font_large.tres" type="DynamicFont" id=3]
+
+[node name="PauseScreen" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": "The Pause Screen. It should be always present in the main scene, but invisible."
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0588235, 0.00784314, 0.180392, 0.721569 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 799.0
+margin_top = 377.0
+margin_right = 1120.0
+margin_bottom = 702.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 321.0
+margin_bottom = 89.0
+custom_fonts/font = ExtResource( 3 )
+text = "PAUSED"
+align = 1
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 93.0
+margin_right = 321.0
+margin_bottom = 133.0
+custom_constants/separation = 40
+
+[node name="ContinueButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 137.0
+margin_right = 321.0
+margin_bottom = 197.0
+focus_next = NodePath("../QuitButton")
+focus_previous = NodePath("../QuitButton")
+text = "Continue"
+
+[node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 201.0
+margin_right = 321.0
+margin_bottom = 261.0
+focus_next = NodePath("../QuitButton")
+focus_previous = NodePath("../QuitButton")
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 265.0
+margin_right = 321.0
+margin_bottom = 325.0
+focus_next = NodePath("../ContinueButton")
+focus_previous = NodePath(".")
+text = "Quit"
