@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://rooms/assets/tileset_floating_dungeon.tres" type="TileSet" id=1]
-[ext_resource path="res://skeleton/Skeleton.tscn" type="PackedScene" id=2]
-[ext_resource path="res://mobs/sword/Sword.tscn" type="PackedScene" id=3]
+[ext_resource path="res://characters/skeleton/Skeleton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://mobs/non_amnesic_shield/NonAmnesicShield.tscn" type="PackedScene" id=3]
 [ext_resource path="res://rooms/assets/tileset_inivisible_walls.tres" type="TileSet" id=4]
-[ext_resource path="res://mobs/mini_bomb/MiniBomb.tscn" type="PackedScene" id=5]
-[ext_resource path="res://mobs/non_amnesic_shield/NonAmnesicShield.tscn" type="PackedScene" id=6]
+[ext_resource path="res://mobs/sword/Sword.tscn" type="PackedScene" id=5]
 [ext_resource path="res://pickups/ice_spells/PickupIce.tscn" type="PackedScene" id=7]
 
 [node name="TestRoom" type="YSort"]
@@ -86,14 +85,11 @@ use this room to test the different mechanics. "
 [node name="PickupIce" parent="." instance=ExtResource( 7 )]
 position = Vector2( 364, 865 )
 
+[node name="NonAmnesicShield" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1253, 588 )
+
+[node name="Sword" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1232, 962 )
+
 [node name="Skeleton" parent="." instance=ExtResource( 2 )]
-position = Vector2( 175, 611 )
-
-[node name="Sword" parent="." instance=ExtResource( 3 )]
-position = Vector2( 962, 425 )
-
-[node name="MiniBomb" parent="." instance=ExtResource( 5 )]
-position = Vector2( 720, 1292 )
-
-[node name="NonAmnesicShield" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1239, 938 )
+position = Vector2( 113, 455 )

@@ -25,7 +25,7 @@ func _ready() -> void:
     _awaremeter.connect("timeout", self, "_on_Awaremeter_timeout")
 
 
-func _on_DetectionArea_body_exited(_body: Robot) -> void:
+func _on_DetectionArea_body_exited(body: Character) -> void:
     pass
 
 
@@ -95,7 +95,7 @@ func _on_physics_process() -> void:
         follow(_target.global_position)
 
 
-func _on_DetectionArea_body_entered(body: Robot) -> void:
+func _on_DetectionArea_body_entered(body: Character) -> void:
     _target = body
 
     _sprite_alert.visible = true
@@ -119,7 +119,3 @@ func _calculate_new_path() -> Vector2:
     _walk_counts += 1
 
     return new_pos
-
-
-func _on_collision_detection_entered(_body) -> void:
-    _next_position = Vector2.ZERO

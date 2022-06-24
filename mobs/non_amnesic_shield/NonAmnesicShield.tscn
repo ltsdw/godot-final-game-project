@@ -271,6 +271,7 @@ tracks/1/keys = {
 }
 
 [node name="NonAmnesicShield" instance=ExtResource( 1 )]
+collision_mask = 51
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" parent="DetectionArea" index="0"]
@@ -278,9 +279,6 @@ shape = SubResource( 1 )
 
 [node name="CollisionShape2D" parent="AttackArea" index="0"]
 shape = SubResource( 2 )
-
-[node name="Sprite" parent="." index="3"]
-rotation = 0.0
 
 [node name="Alert" parent="Sprite" index="0"]
 flip_h = true
@@ -294,12 +292,11 @@ anims/hit = SubResource( 6 )
 
 [node name="Cannon" parent="." index="10"]
 script = ExtResource( 3 )
-collision_mask = 17
 
 [node name="RayCast2D" type="RayCast2D" parent="." index="11"]
 enabled = true
 cast_to = Vector2( 2000, 0 )
-collision_mask = 17
+collision_mask = 23
 
 [node name="Awaremeter" type="Timer" parent="." index="12"]
 wait_time = 3.0

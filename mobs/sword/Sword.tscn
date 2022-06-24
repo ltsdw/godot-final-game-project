@@ -278,6 +278,7 @@ anims/hover = SubResource( 6 )
 [node name="Hurtbox" type="Area2D" parent="." index="10"]
 rotation = 1.5708
 collision_layer = 0
+collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( -2.50006, -1.49998 )
@@ -289,7 +290,7 @@ one_shot = true
 
 [node name="RayCast2D" type="RayCast2D" parent="." index="12"]
 cast_to = Vector2( 2000, 0 )
-collision_mask = 19
+collision_mask = 23
 
 [node name="Awaremeter" type="Timer" parent="." index="13"]
 wait_time = 3.0

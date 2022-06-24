@@ -25,6 +25,11 @@ _global_script_classes=[ {
 "path": "res://bullets/Bullet.gd"
 }, {
 "base": "KinematicBody2D",
+"class": "Character",
+"language": "GDScript",
+"path": "res://characters/Character.gd"
+}, {
+"base": "KinematicBody2D",
 "class": "Mob",
 "language": "GDScript",
 "path": "res://mobs/Mob.gd"
@@ -39,15 +44,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://music/MusicPlayer.gd"
 }, {
-"base": "KinematicBody2D",
-"class": "Robot",
-"language": "GDScript",
-"path": "res://robot/Robot.gd"
-}, {
 "base": "Camera2D",
 "class": "ShakingCamera2D",
 "language": "GDScript",
-"path": "res://robot/ShakingCamera2D.gd"
+"path": "res://props/shakingcamera2d/ShakingCamera2D.gd"
 }, {
 "base": "Mob",
 "class": "Shield",
@@ -67,7 +67,7 @@ _global_script_classes=[ {
 "base": "Area2D",
 "class": "SpellHolder",
 "language": "GDScript",
-"path": "res://robot/SpellHolder.gd"
+"path": "res://characters/spellholder/SpellHolder.gd"
 }, {
 "base": "Spell",
 "class": "SpellIcePunch",
@@ -93,10 +93,10 @@ _global_script_class_icons={
 "BaseRoom": "",
 "Bomb": "",
 "Bullet": "",
+"Character": "",
 "Mob": "",
 "Pickup": "",
 "RandomAudioPlayer": "",
-"Robot": "",
 "ShakingCamera2D": "",
 "Shield": "",
 "Spell": "",
@@ -255,6 +255,7 @@ pause_toggle={
 
 2d_physics/layer_1="Robot"
 2d_physics/layer_2="Mob"
+2d_physics/layer_3="Skeleton"
 2d_physics/layer_5="Walls"
 2d_physics/layer_6="Limits"
 

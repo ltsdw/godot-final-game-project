@@ -15,14 +15,14 @@ onready var _animation_player := $AnimationPlayer
 
 
 func _ready() -> void:
-    connect("body_entered", self, "_on_robot_pickup")
+    connect("body_entered", self, "_on_character_pickup")
     connect("area_entered", self, "_on_spell_holder_pickup")
     _animation_player.play("idle")
 
 
 # Virtual function (scripts that extend this class should override this
 # function). Called when the Robot touches the pickup.
-func _on_robot_pickup(robot: Robot) -> void:
+func _on_character_pickup(character: Character) -> void:
     pass
 
 
@@ -41,5 +41,5 @@ func _disable() -> void:
     # Turning off monitoring and monitorable will prevent the area from detecting anything else.
     set_deferred("monitoring", false)
     set_deferred("monitorable", false)
-    disconnect("body_entered", self, "_on_robot_pickup")
+    disconnect("body_entered", self, "_on_character_pickup")
     disconnect("area_entered", self, "_on_spell_holder_pickup")

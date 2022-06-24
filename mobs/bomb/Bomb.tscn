@@ -470,7 +470,7 @@ anims/will_explode = SubResource( 18 )
 
 [node name="ShockArea" type="Area2D" parent="." index="10"]
 collision_layer = 0
-collision_mask = 3
+collision_mask = 7
 monitoring = false
 monitorable = false
 

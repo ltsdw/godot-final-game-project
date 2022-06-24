@@ -390,7 +390,7 @@ tracks/0/keys = {
 [node name="MiniBomb" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 damage = 1
-c_mask = 17
+c_mask = 21
 
 [node name="CollisionShape2D" parent="DetectionArea" index="0"]
 shape = SubResource( 1 )
@@ -400,6 +400,7 @@ shape = SubResource( 2 )
 
 [node name="Sprite" parent="." index="3"]
 modulate = Color( 0.580392, 0.694118, 1, 1 )
+rotation = 0.0
 flip_h = true
 flip_v = true
 

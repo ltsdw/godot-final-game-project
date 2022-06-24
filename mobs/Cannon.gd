@@ -9,18 +9,18 @@ extends Sprite
 # The cannon can target either the player or mobs. Since the cannon is supposed
 # to be used by mobs, it defaults to the player.
 enum CollisionMask {
-    PLAYER = 1,
+    PLAYER = 5,
     MOB = 2,
     WALL = 16,
-    PLA_WAL = 17,
-    ALL = 19
+    PLAYER_AND_WALL = 21,
+    ALL = 23
 }
 
 # Load a bullet scene to shoot here
 export var BulletScene: PackedScene
 
 # Decides what collision mask the next ejected bullet will be
-export(CollisionMask) var collision_mask := CollisionMask.PLAYER
+export(CollisionMask) var collision_mask := CollisionMask.PLAYER_AND_WALL
 
 # Maximum random angle applied to the shot bullets in degrees. Controls the
 # cannon's precision.

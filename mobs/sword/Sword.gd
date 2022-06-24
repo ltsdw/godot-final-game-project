@@ -48,6 +48,8 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_physics_process(delta: float) -> void:
+    print(_target)
+
     if not _target:
         if not _is_resting:
             var rot: float = lerp_angle(_sprite.rotation, _normal_rotation, lerp_smoothness)
@@ -137,7 +139,7 @@ func _rest(rot: float) -> void:
     hurtbox.rotation = rot
 
 
-func _on_AttackArea_body_exited(_body: Robot) -> void:
+func _on_AttackArea_body_exited(body: Character) -> void:
     if not _rush_timer.is_stopped():
         return
 
@@ -145,9 +147,11 @@ func _on_AttackArea_body_exited(_body: Robot) -> void:
     _target_within_range = false
 
 
-func _on_DetectionArea_body_exited(_body: Robot) -> void:
+func _on_DetectionArea_body_exited(body: Character) -> void:
     #_target = null
     #_sprite_alert.visible = false
+
+    print("body exited %s" % body)
 
     _target_within_range = false
     #_should_do_rush(false)

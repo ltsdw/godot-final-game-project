@@ -16,7 +16,7 @@ export var orbit_distance := 200
 export var speed := 250.0
 
 # This will be set if the robot is in view
-var _target: Robot = null
+var _target: Character = null
 # if the robot can be attacked
 var _target_within_range := false
 
@@ -141,7 +141,8 @@ func _on_DieSound_finished() -> void:
 
 # When the player enters the detection area, we set the _target variable and
 # show the _sprite_alert node.
-func _on_DetectionArea_body_entered(body: Robot) -> void:
+func _on_DetectionArea_body_entered(body: Character) -> void:
+    print("body entered %s" % body)
     _target = body
     _sprite_alert.visible = true
 
@@ -151,18 +152,19 @@ func _on_DetectionArea_body_entered(body: Robot) -> void:
 #
 # If you want a mob that doesn't let the player go after seeing it, override
 # this method and set it to pass. Then the mob will remember the player forever.
-func _on_DetectionArea_body_exited(_body: Robot) -> void:
+func _on_DetectionArea_body_exited(body: Character) -> void:
     _target = null
     _sprite_alert.visible = false
 
 
 # Called when the player is within attack range.
-func _on_AttackArea_body_entered(body: Robot) -> void:
+func _on_AttackArea_body_entered(_body: Character) -> void:
     _target_within_range = true
 
 
 # Called when the player exits attack range.
-func _on_AttackArea_body_exited(_body: Robot) -> void:
+# every time this function is overloaded it should check if the body is a character.
+func _on_AttackArea_body_exited(_body: Character) -> void:
     _target_within_range = false
 
 

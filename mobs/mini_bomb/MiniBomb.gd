@@ -9,11 +9,11 @@ export(int, 1, 24, 1) var projectile_number: int = 24
 export(float, 0, 6.24, 0.1) var angle_spawn = TAU / projectile_number
 
 enum CollisionMask {
-    PLAYER = 1,
+    PLAYER = 5,
     MOB = 2,
     WALL = 16,
-    PLA_WAL = 17,
-    ALL = 19
+    PLAYER_AND_WALL = 21,
+    ALL = 23
 }
 
 export(CollisionMask) var c_mask: int = CollisionMask.PLAYER
@@ -38,7 +38,7 @@ func _shoot() -> void:
         rot += angle_spawn
 
 
-func _on_AttackArea_body_entered(body: Robot) -> void:
+func _on_AttackArea_body_entered(body: Character) -> void:
     _target_within_range = true
 
     _body_default_speed = body.speed

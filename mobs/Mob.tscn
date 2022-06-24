@@ -241,7 +241,7 @@ tracks/1/keys = {
 
 [node name="Mob" type="KinematicBody2D"]
 collision_layer = 2
-collision_mask = 51
+collision_mask = 55
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -249,6 +249,7 @@ shape = SubResource( 1 )
 
 [node name="DetectionArea" type="Area2D" parent="."]
 collision_layer = 0
+collision_mask = 5
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
@@ -258,6 +259,7 @@ shape = SubResource( 5 )
 
 [node name="AttackArea" type="Area2D" parent="."]
 collision_layer = 0
+collision_mask = 5
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]

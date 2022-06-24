@@ -26,7 +26,7 @@ func _on_AnimationPlayer_animation_finished(animation_name: String) -> void:
             _animation_player.play("hover")
 
 
-func _on_AttackArea_body_exited(body: Robot) -> void:
+func _on_AttackArea_body_exited(body: Character) -> void:
     _target_within_range = false
 
     body.speed = _body_default_speed
@@ -37,7 +37,7 @@ func _on_AttackArea_body_exited(body: Robot) -> void:
             _animation_player.play("RESET")
 
 
-func _on_AttackArea_body_entered(body: Robot) -> void:
+func _on_AttackArea_body_entered(body: Character) -> void:
     _target_within_range = true
 
     _body_default_speed = body.speed
@@ -51,4 +51,3 @@ func _on_ShockArea_entered(body: Node) -> void:
         return
 
     body.take_damage(damage)
-
