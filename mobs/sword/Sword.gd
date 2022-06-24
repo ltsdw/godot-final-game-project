@@ -48,8 +48,6 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_physics_process(delta: float) -> void:
-    print(_target)
-
     if not _target:
         if not _is_resting:
             var rot: float = lerp_angle(_sprite.rotation, _normal_rotation, lerp_smoothness)
@@ -150,8 +148,6 @@ func _on_AttackArea_body_exited(body: Character) -> void:
 func _on_DetectionArea_body_exited(body: Character) -> void:
     #_target = null
     #_sprite_alert.visible = false
-
-    print("body exited %s" % body)
 
     _target_within_range = false
     #_should_do_rush(false)
